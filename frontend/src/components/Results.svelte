@@ -17,16 +17,16 @@
 </script>
 
 
-<h1 class=" text-2xl">{name.toUpperCase()}</h1>
-<div class="flex flex-col self-center ">
-	<button class="justify center" onClick={() => generateResults()}>
+<div class="flex flex-col self-center gap-4 mt-4 rounded-lg border-1 px-4">
+	<h1 class=" text-2xl text-center">{name.toUpperCase()}</h1>
+	<button class="justify center" onclick={() => generateResults()}>
 		generate results
 	</button>
-	<ul>
+	<ul class="flex flex-col items-start gap-4">
 		{#each results as result}
 			<li>the number is {result}</li>
 		{:else}
 			<p>No results</p>
 		{/each}
-</ul>
+	</ul>
 </div>
