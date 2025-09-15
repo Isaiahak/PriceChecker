@@ -5,6 +5,7 @@ import (
 	"crypto/rand"
 	"crypto/sha256"
 	"encoding/base64"
+	"encoding/json"
 	"fmt"
 	"io"
 	"log"
@@ -26,6 +27,23 @@ type UserAuth struct {
 type User struct {
 	Username string
 	Password string
+}
+
+type AuthorizeResponse struct {
+	State string
+	Code string
+
+}
+
+type TokenRequest struct {
+	ClientID string
+	ClientSecret string
+	GrantType string // always authorization_code
+	Code string
+	RedirectURL string
+	Scope string
+	CodeVerifier string
+
 }
 
 // Item query type for storing the item data
@@ -60,14 +78,36 @@ func SignIn() bool {
 	"&code_challendge_method" + codeChallengeMethod
 
 	res, err := http.Get(authorizeURL); if err != nil {
-		// we 
 		log.Fatal("Couldn't complete authorization", err)
 	}
+
 	body, err := io.ReadAll(res.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
 	res.Body.Close()
 	if res.StatusCode > 299 {
 		log.Fatalf("Reponse failed with status code: %d")
 	}
+
+	var authResponse AuthorizeResponse
+	json.Unmarshal(body, &authResponse)
+
+
+	var tokenURL = "http://pathofexile.com/oauth/token"
+	var contentType = "application/x-www-form-urlencoded"
+
+	if authResponse.State == state {
+		res, err := http.Post(tokenURL, contentType, ); if err != nil {
+			log.Fatal("Couldn't complete token exchange", err)
+		}
+		// continue
+	} else {
+		log.Fatalf("state returned doesn't match generated state: %s", state)
+	}
+
+
+
 
 
 
