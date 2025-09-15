@@ -1,0 +1,371 @@
+//------------------------------------What the game gives me--------------------------------------------------------
+
+
+//---------------------------------------------- Rare items ---------------------------------------------------------
+
+
+Item Class: Rings
+Rarity: Rare
+Kraken Circle
+Prismatic Ring
+--------
+Requires: Level 60
+--------
+Item Level: 82
+--------
++8% to all Elemental Resistances (implicit)
+--------
+Adds 29 to 44 Fire damage to Attacks
+30% increased Chaos Damage
++114 to maximum Mana
++19 to Strength
+43% increased Mana Regeneration Rate
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+Item Class: Rings
+Rarity: Magic
+Unset Ring
+--------
+Item Level: 82
+--------
+Grants 1 additional Skill Slot (implicit)
+--------
+Unidentified
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+Item Class: Amulets
+Rarity: Unique
+Astramentis
+Stellar Amulet
+--------
+Quality (Attribute Modifiers): +20% (augmented)
+--------
+Requires: Level 24
+--------
+Item Level: 81
+--------
+Allocates Lay Siege (enchant)
+--------
++7 to all Attributes (implicit)
+--------
++105 to all Attributes
+-4 Physical Damage taken from Attack Hits
+--------
+Mindless rage will shake the world,
+Cunning lies will bend it.
+Reckless haste will break the world,
+And into darkness send it.
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+
+Item Class: Body Armours
+Rarity: Magic
+Rapturous Ornate Plate of Immortality
+--------
+Armour: 445
+--------
+Requires: Level 70, 121 Str
+--------
+Item Level: 80
+--------
+Regenerate 1.9% of maximum Life per second (implicit)
+--------
++190 to maximum Life
+31.6 Life Regeneration per second
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+
+Item Class: Two Hand Maces
+Rarity: Rare
+Phoenix Brand
+Ironwood Greathammer
+--------
+Quality: +20% (augmented)
+Physical Damage: 438-759 (augmented)
+Critical Hit Chance: 5.00%
+Attacks per Second: 1.34 (augmented)
+--------
+Requires: Level 77, 489 (augmented) Str
+--------
+Sockets: S S 
+--------
+Item Level: 84
+--------
+36% increased Physical Damage (rune)
+--------
+Causes 48% increased Stun Buildup (implicit)
+--------
+27% increased Attack Speed (fractured)
+75% increased Physical Damage
+Adds 34 to 48 Physical Damage
++190 to Accuracy Rating
++6 to Level of all Attack Skills
+20% chance to gain Onslaught on Killing Hits with this Weapon
+74% increased Physical Damage (desecrated)
+--------
+Fractured Item
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+
+Item Class: Waystones
+Rarity: Magic
+Infernal Waystone (Tier 14) of Splitting
+--------
+Waystone Tier: 14
+Revives Available: 4 (augmented)
+Monster Pack Size: +14% (augmented)
+Magic Monsters: +28% (augmented)
+Waystone Drop Chance: +40% (augmented)
+--------
+Item Level: 79
+--------
+Monsters fire 2 additional Projectiles
+Monsters deal 27% of Damage as Extra Fire
+--------
+Can be used in a Map Device, allowing you to enter a Map. Waystones can only be used once.
+
+
+
+//---------------------------------------------- Unique ---------------------------------------------------------
+
+Item Class: Helmets
+Rarity: Unique
+Constricting Command
+Viper Cap
+--------
+Evasion Rating: 136
+--------
+Requires: Level 38, 54 Dex
+--------
+Sockets: S 
+--------
+Item Level: 81
+--------
+24% increased Mana Regeneration Rate (enchant)
+--------
+8% increased Area of Effect (rune)
+--------
++82 to maximum Life
++14 to all Attributes
+9.7 Life Regeneration per second
+Require 5 fewer enemies to be Surrounded
+--------
+"Be vigilant, Nezahul! When the serpent is cornered, does it give up?
+No... It waits. Then it bites the first hand it finds. 
+The danger of numbers is all in your mind!"
+- Viper Napuatzi, instructing Royal Commander Nezahul
+--------
+Corrupted
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+Item Class: Boots
+Rarity: Unique
+Gamblesprint
+Embossed Boots
+--------
+Evasion Rating: 107 (augmented)
+--------
+Requires: Level 16, 23 Dex
+--------
+Item Level: 81
+--------
+114% increased Evasion Rating
+10% increased Rarity of Items found
++13 to Dexterity
++24% to Lightning Resistance
+Gain 0% to 40% increased Movement Speed at random when Hit, until Hit again
+--------
+All your tomorrows lie ahead of you,
+unknown and snarled to the very last.
+
+
+
+//---------------------------------------------- Currency ---------------------------------------------------------
+
+Item Class: Stackable Currency
+Rarity: Currency
+Preserved Collarbone
+--------
+Stack Size: 1/20
+--------
+Desecrates a Rare Amulet, Ring or Belt
+--------
+Right click this item then left click a Rare item to apply it.
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+Item Class: Stackable Currency
+Rarity: Currency
+Greater Regal Orb
+--------
+Stack Size: 21/20
+Minimum Modifier Level: 35
+--------
+Upgrades a Magic item to a Rare item, adding 1 modifier
+--------
+Right click this item then left click a magic item to apply it. Current modifiers are retained and a new one is added.
+Shift click to unstack.
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+
+Item Class: Stackable Currency
+Rarity: Currency
+Glassblower's Bauble
+--------
+Stack Size: 13/20
+--------
+Improves the quality of a flask
+--------
+Right click this item then left click a flask to apply it. The maximum quality is 20%.
+Shift click to unstack.
+
+
+
+
+
+
+//---------------------------------------------- Gems ---------------------------------------------------------
+
+Item Class: Skill Gems
+Rarity: Gem
+Overwhelming Presence
+--------
+Buff, Persistent, Aura
+Level: 19
+Quality: +20% (augmented)
+Reservation: 30 Spirit
+--------
+Requires: Level 84, 147 Str
+--------
+Sockets: G G 
+--------
+While active, emits an Aura that makes enemies in your Presence easier to Stun and inflict Elemental Ailments upon.
+--------
+15% increased Aura Magnitudes
+Enemies in your Presence have 24% reduced
+Elemental Ailment Threshold
+Enemies in your Presence have 24% reduced Stun Threshold
+--------
+Skills can be managed in the Skills Panel.
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+ 
+
+Item Class: Support Gems
+Rarity: Gem
+Tawhoa's Tending
+--------
+Support, Lineage, Totem, AoE, Physical
+Category: Hardy Totems
+Cost Multiplier: 110%
+--------
+Requires: Level 65
+Support Requirements: +5 Str
+--------
+Supports Skills which create Totems, causing those Totems to have more Life. Totems created by Supported Skills explode on death, dealing Physical damage based on their Life.
+--------
+Support
+--------
+Totems created by Supported
+Skills have 50% more maximum Life
+Totems created by Supported Skills trigger Tawhoa's Vengeance on death
+--------
+Tawhoa's Vengeance
+--------
+Critical Hit Chance: 5.00%
+--------
+Deals Physical Damage in an area, based on Totem Life.
+--------
+Explosion radius is 3 metres
+Explosion deals base Physical Damage equal to 10% of Totem's maximum Life
+--------
+A scavenging warrior found Tawhoa meditating in a grove.
+"There is only so much jade in this world," intoned the god.
+"Take my gift to your tribe. Ironwood will grow for all time." 
+--------
+Place into a Skill's Support Gem socket in the Skills Panel to apply its effects to that Skill. You cannot have multiple Support Gems of the same Category socketed within one Skill.
+
+
+//#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
+
+Item Class: Support Gems
+Rarity: Gem
+Tawhoa's Tending
+--------
+Support, Lineage, Totem, AoE, Physical
+Category: Hardy Totems
+Cost Multiplier: 110%
+--------
+Requires: Level 65
+Support Requirements: +5 Str
+--------
+Supports Skills which create Totems, causing those Totems to have more Life. Totems created by Supported Skills explode on death, dealing Physical damage based on their Life.
+--------
+Support
+--------
+Totems created by Supported
+Skills have 50% more maximum Life
+Totems created by Supported Skills trigger Tawhoa's Vengeance on death
+--------
+Tawhoa's Vengeance
+--------
+Critical Hit Chance: 5.00%
+--------
+Deals Physical Damage in an area, based on Totem Life.
+--------
+Explosion radius is 3 metres
+Explosion deals base Physical Damage equal to 10% of Totem's maximum Life
+--------
+A scavenging warrior found Tawhoa meditating in a grove.
+"There is only so much jade in this world," intoned the god.
+"Take my gift to your tribe. Ironwood will grow for all time." 
+--------
+Place into a Skill's Support Gem socket in the Skills Panel to apply its effects to that Skill. You cannot have multiple Support Gems of the same Category socketed within one Skill.
+
+
+//------------------------------------What is desired for search--------------------------------------------------------
+
+
+
+//---------------------------------------------- Rare items ---------------------------------------------------------
+
+
+
+//---------------------------------------------- Unique items ---------------------------------------------------------
+
+
+
+
+//---------------------------------------------- Stackable Currency ---------------------------------------------------------
+
+
+
+
+//---------------------------------------------- Gems ---------------------------------------------------------
+
+
