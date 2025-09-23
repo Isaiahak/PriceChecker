@@ -69,23 +69,5 @@ License note: original page licensed under CC BY 3.0 — this is a concise summa
 - fmt.Sprintf is useful for formatted strings: fmt.Sprintf("%.4f", math.Pi) -> "3.1416"
 - See fmt formatting cheatsheet for verbs and flags
 
-11. Regular expressions
-- Use regexp package for pattern matching and more advanced operations (tutorials / cheat sheets available)
 
-12. Related topics and tips
-- Strings are byte sequences; runes represent Unicode points.
-- For multi-byte characters, iterate with range to get correct rune boundaries.
-- For efficient repeated concatenation, use strings.Builder and fmt.
-- See related articles: runes & character encoding, efficient string concatenation.
-
-End of summary.
-"""
-
-# Write the summary to a text file for the user to download
-path = "/mnt/data/Go_string_cheatsheet_summary.txt"
-with open(path, "w", encoding="utf-8") as f:
-    f.write(summary)
-
-# Print the path so the notebook frontend returns a download link
-path
 
