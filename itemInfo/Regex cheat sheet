@@ -1,0 +1,64 @@
+Go Regexp Cheat Sheet — Summarized
+Source: https://yourbasic.org/golang/regexp-cheat-sheet/ (summarized)
+License note: original page licensed under CC BY 3.0 — this is a concise summary.
+
+1. Basics
+- regex defines a search pattern.
+- regexp.MatchString(pattern, text): check if pattern occurs in text.
+- Use ^ (start) and $ (end) to match the entire string.
+- Compile regexps with regexp.Compile or regexp.MustCompile.
+- Raw string literals (backticks) are handy: backslashes are literal.
+
+2. Cheat-Sheet Syntax
+Choice & grouping:
+- x|y: x or y
+- (…): group, precedence
+
+Concatenation:
+- xy: x followed by y
+
+Repetition (greedy vs non-greedy):
+- x* (0+), x*? (0+, fewest), x+ (1+), x+? (1+, fewest)
+- x? (0 or 1, greedy), x?? (0 or 1, prefer 0)
+- x{n} exactly n
+
+Character classes:
+- . any character (except newline)
+- [ab] either a or b
+- [^ab] neither a nor b
+- [a-z], [a-z0-9] ranges
+- \d digits, \D non-digits
+- \s whitespace, \S non-whitespace
+- \w word chars, \W non-word
+- \p{Name}, \P{Name} Unicode class
+
+Special chars/escapes:
+- Escape meta chars: ^ $ . | ? * + - { } ( ) [ ] - 	 
+ 
+   etc.
+- S octal,  hex
+
+Text boundaries:
+- ^ start, $ end
+- \A start of text, \z end of text
+-  word boundary, \B non-word boundary
+
+Flags:
+- (?i) case-insensitive
+- (?m) multiline (^, $ per line)
+- (?s) single-line (dot matches newline)
+
+3. Common Operations
+- FindString: first match
+- FindStringIndex: indices of match
+- FindAllString(input, n): up to n matches (-1 for all)
+- ReplaceAllString: replace matches
+- Split(text, n): split by regex
+
+4. Implementation Notes
+- Go uses RE2 syntax (regexp package).
+- Supports UTF-8 and Unicode classes.
+- No backreferences ( etc).
+- Efficient, linear-time matching.
+
+End of summary.

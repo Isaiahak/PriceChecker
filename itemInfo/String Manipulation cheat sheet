@@ -1,0 +1,91 @@
+# Creating a concise summarized text file of the referenced page for offline use.
+summary = """Go string handling overview — summarized cheat sheet
+Source: https://yourbasic.org/golang/string-functions-reference-cheat-sheet/ (summarized)
+License note: original page licensed under CC BY 3.0 — this is a concise summary.
+
+1. String literals (escape characters)
+- "" : default zero value for type string
+- "Japan 日本" : Unicode text (Go strings are UTF-8)
+- "\\xNN" : specify a byte (e.g., "\\xe6")
+- "\\uNNNN" : specify a Unicode codepoint (e.g., "\\u65E5")
+- "\\" : backslash, "\"" : double quote, "\\n" newline, "\\t" tab
+- Raw string literals (backticks) treat backslashes literally (useful for multiline or raw text)
+- html.EscapeString("<>") -> "&lt;&gt;" (escape HTML)
+- url.PathEscape("A B") -> "A%20B" (percent-encoding)
+
+2. Concatenate
+- "Ja" + "pan" -> "Japan"
+- For many concatenations, prefer strings.Builder or fmt (avoid repeated + in loops). See efficient concatenation tips.
+
+3. Equal and compare (case-insensitive)
+- "Japan" == "Japan" -> true
+- strings.EqualFold("Japan", "JAPAN") -> true (Unicode case folding)
+- "Japan" < "japan" -> true (lexicographic order)
+
+4. Length: bytes vs runes (Unicode)
+- len("日") -> 3 (bytes)
+- utf8.RuneCountInString("日") -> 1 (runes)
+- utf8.ValidString("日") -> true
+
+5. Index, substring, iterate
+- "Japan"[2] -> byte at position 2 ('p')
+- "Japan"[1:3] -> "ap" (byte slicing)
+- Range loop iterates runes (Unicode code points):
+  for i, ch := range "Japan 日本" { fmt.Printf("%d:%q ", i, ch) }
+  // Outputs rune indices and values; non-ASCII bytes produce different results if iterating by byte.
+
+6. Search (contains, prefix/suffix, index)
+- strings.Contains("Japan", "abc") -> false
+- strings.ContainsAny("Japan", "abc") -> true
+- strings.Count("Banana", "ana") -> 1 (non-overlapping)
+- strings.HasPrefix("Japan", "Ja") -> true
+- strings.HasSuffix("Japan", "pan") -> true
+- strings.Index("Japan", "abc") -> -1
+- strings.IndexAny("Japan", "abc") -> 1
+- strings.LastIndex, strings.LastIndexAny for last occurrences
+
+7. Replace, map, case, trim
+- strings.Replace("foo", "o", ".", 2) -> "f.." (use -1 to replace all)
+- strings.Map(func(r rune) rune { return r + 1 }, "ab") -> "bc"
+- strings.ToUpper("Japan") -> "JAPAN"
+- strings.ToLower("Japan") -> "japan"
+- strings.Title("ja pan") -> "Ja Pan" (capitalizes initial letters)
+- strings.TrimSpace(" foo\\n") -> "foo"
+- strings.Trim("foo", "fo") -> strips leading & trailing 'f' or 'o'
+- strings.TrimLeft, TrimRight, TrimPrefix, TrimSuffix exist for specific needs
+
+8. Split (by whitespace or separator)
+- strings.Fields(" a\\t b\\n") -> ["a" "b"] (split on white space)
+- strings.Split("a,b", ",") -> ["a" "b"]
+- strings.SplitAfter("a,b", ",") -> ["a," "b"] (keeps separator on left pieces)
+
+9. Join and repeat
+- strings.Join([]string{"a", "b"}, ":") -> "a:b"
+- strings.Repeat("da", 2) -> "dada"
+
+10. Format and convert (strconv, fmt)
+- strconv.Itoa(-42) -> "-42" (int to string)
+- strconv.FormatInt(255, 16) -> "ff" (base 16)
+- fmt.Sprintf is useful for formatted strings: fmt.Sprintf("%.4f", math.Pi) -> "3.1416"
+- See fmt formatting cheatsheet for verbs and flags
+
+11. Regular expressions
+- Use regexp package for pattern matching and more advanced operations (tutorials / cheat sheets available)
+
+12. Related topics and tips
+- Strings are byte sequences; runes represent Unicode points.
+- For multi-byte characters, iterate with range to get correct rune boundaries.
+- For efficient repeated concatenation, use strings.Builder and fmt.
+- See related articles: runes & character encoding, efficient string concatenation.
+
+End of summary.
+"""
+
+# Write the summary to a text file for the user to download
+path = "/mnt/data/Go_string_cheatsheet_summary.txt"
+with open(path, "w", encoding="utf-8") as f:
+    f.write(summary)
+
+# Print the path so the notebook frontend returns a download link
+path
+

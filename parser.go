@@ -26,6 +26,11 @@ func ParseSupportGem() {
 
 }
 
+// uniques items wil lbe searched based on:
+// name after Rarity new Line
+// sockets count S until new line
+// implicit stat
+
 func ParseUnique() {
 
 }
