@@ -16,6 +16,8 @@ const (
 )
 
 // check if i have missed any base types
+
+
 const (
 	Amulet BaseItem = "Amulets" 
 	Ring BaseItem = "Rings"
@@ -146,8 +148,9 @@ func ParseItem(item string) {
 
 
 
-go func ParseRare() {
-
+go func ParseRare(item string) {	
+	
+	
 }
 
 // skill gems will be searched based on:
